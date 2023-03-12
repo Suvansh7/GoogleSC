@@ -1,0 +1,8 @@
+:root{
+    --primaryGreen: #5fab49;
+    --white: #fff;
+}
+.btn-custom {
+    --bs-btn-bg: var(--primaryGreen);
+    --bs-btn-color: var(--white)
+}

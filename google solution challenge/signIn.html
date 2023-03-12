@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="styles/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+    <div class="container text-center">
+        <div class="row align-items-center justify-content-center">
+
+            <div class="col-lg-6 col-md-6 col-sm-8">
+                <img src="Images/signin.png" alt="" class="img-fluid">
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-8">
+
+                <h1 class="h1 text-muted">
+                    Let's Get Started <br> Welcome Back
+                </h1>
+                <p>
+                    We are here to help our environment <br> through plastic recycling
+                </p>
+                <form class="form-floating">
+
+                    <div class="form-floating mb-3">
+                        <input type="number" class="form-control rounded-pill" id="signinEmail"
+                            placeholder="name@example.com" value="">
+                        <label for="signinEmail">Email address</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control rounded-pill" id="signinPassword"
+                            placeholder="Password" value="">
+                        <label for="signinPassword">Password</label>
+                    </div>
+
+                    <div class="d-grid mb-3 ">
+                        <button type="submit" id="submit" class="btn btn-success btn-custom btn-lg rounded-pill">Sign In</button>
+                    </div>
+                </form>
+                <p>
+                    Don't have an account? <a href="signUp.html">Sign Up</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+        <script src="signin.js"></script>
+</body>
+
+</html>
