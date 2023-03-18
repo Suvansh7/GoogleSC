@@ -1,8 +1,31 @@
 :root{
     --primaryGreen: #5fab49;
+    --secondaryGreen:#e4fcb9;
+    --secondaryGray: #ecf2fb;
+    --primaryGray: #cfcfd7;
     --white: #fff;
 }
 .btn-custom {
     --bs-btn-bg: var(--primaryGreen);
     --bs-btn-color: var(--white)
+}
+.full-height{
+    min-height: 100vh;
+}
+.img-profile{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid;
+}
+.img-small{
+    max-width: 100px;
+    max-height: 100px;
+}
+.bg-light-green{
+    background-color: var(--secondaryGreen);
+}
+.rectangle{
+    aspect-ratio: 2;
+    object-fit: contain;
 }
