@@ -60,6 +60,7 @@ function submitForm(e) {
 
       document.getElementById("enteries").reset();
       alert("YOUR DATA HAS BEEN SUBMITTED SUCCESSFULLY..");
+      window.location.href="./signIn.html";
 
     };
 
