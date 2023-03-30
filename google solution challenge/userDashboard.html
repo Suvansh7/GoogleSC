@@ -15,23 +15,26 @@
     </head>
 
     <body>
+        <!-- navbar -->
         <header>
-            <nav class="navbar navbar-expand-lg shadow mb-5 px-5">
+            <nav class="navbar navbar-expand-lg bg-light mb-3">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="#">Logo</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
-                  <div class="navbar-toggle" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
-                      <a class="nav-link" href="#">Features</a>
-                      <a class="nav-link" href="#">Pricing</a>
-                      <a class="nav-link disabled">Disabled</a>
-                    </div>
+                  <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a href="newAppointment.html" class="nav-link hover">Book Appointment</a> 
+                      </li>
+                      <li class="nav-item" id="signout">
+                        <a class="nav-link hover" href="#">Sign Out</a>
+                      </li>              
+                    </ul>
                   </div>
                 </div>
-              </nav>
+            </nav>
         </header>
 
         <main>
@@ -43,7 +46,7 @@
                         <img src="Images/profilepic.png"  class="img-profile" alt="profile pic">
                     </div>
                     <div class="p-2">
-                        <p class="mb-0"><strong>Hello, <span id="userName"><p id="name"></p></span></strong></p>
+                        <p class="mb-0"><strong>Hello, <span id="name"></span></strong></p>
                         <p class="text-muted"><small>Let's change the world</small></p>
                     </div>
                 </div>

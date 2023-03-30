@@ -29,3 +29,6 @@
     aspect-ratio: 2;
     object-fit: contain;
 }
+.hover:hover{
+    color: var(--primaryGreen);
+}

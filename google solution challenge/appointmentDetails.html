@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Appointments Details</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link href="styles/style.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <!-- navbar -->
+        <header>
+            <nav class="navbar navbar-expand-lg bg-light mb-3">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Logo</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item" id="signout">
+                        <a class="nav-link hover" href="#">Sign Out</a>
+                      </li>              
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            
+            <div class="container">
+                <!-- details -->
+                <div id="details" class="p-2 row justify-content-evenly align-item-center">
+
+                  <!-- appointment deatils -->
+                  <div id="appointment-details" class="col-sm-12 col-md-6 col-lg-4 mb-5">
+                    <div class="info">
+                      <p class="mb-0"><Strong>Appointment Number</Strong></p>
+                      <p id="number">Number</p>
+                    </div>
+  
+                    <div class="info">
+                      <p class="mb-0"><Strong>Location</Strong></p>
+                      <p id="location">Location</p>
+                    </div>
+  
+                    <div class="info">
+                      <p class="mb-0"><Strong>Date</Strong></p>
+                      <p id="date">Date</p>
+                    </div>
+  
+                    <div class="info">
+                      <p class="mb-0"><Strong>Time</Strong></p>
+                      <p id="Time">Time</p>
+                    </div>
+                  </div>
+
+                  <!-- user deatils -->
+                  <div id="user-details" class=" col-sm-12 col-md-6 col-lg-4 mb-5">
+                    <div class="info">
+                      <p class="mb-0"><Strong>User Name</Strong></p>
+                      <p id="name">Name</p>
+                    </div>
+  
+                    <div class="info">
+                      <p class="mb-0"><Strong>Contact</Strong></p>
+                      <p id="contact">Contact</p>
+                    </div>
+
+                </div>
+
+                <!-- buttons -->
+                <div id="button-group" class="d-flex justify-content-center align-item-center">
+                  <div>
+                    <button class="btn btn-success btn-custom rounded-pill px-5" id="accept">Accept</button>
+                    <button class="btn btn-danger rounded-pill px-5 ms-3" id="cancel">Cancel</button>
+                  </div>
+                </div>
+            </div>
+        </main>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+                crossorigin="anonymous"></script>
+    </body>
+</html>
