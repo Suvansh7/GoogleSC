@@ -16,7 +16,9 @@ document.getElementById("submit").addEventListener("click", function check(){
 
     var number = document.getElementById('signinEmail').value;
     database.ref('enteries').once('value', function(snapshot) {
+      alert("nested ");
               if (snapshot.hasChild(number)) {
+                alert("if");
                 var pass=document.getElementById()
                 database.ref('enteries').child(number).once("value" , function(snapshot){
                   snapshot.forEach(function(element) {
@@ -29,12 +31,17 @@ document.getElementById("submit").addEventListener("click", function check(){
                       // console.log(element.key);
                       if(element.key.value==pass)
                         {
+                          alert("nested if");
+                          window.location.href="./userDashboard.html";
+                        }
+                        else{
+                          alert("incorrect")
                         }
 
                 alert("number registered")
-                }
-                }}
-});
+                  })
+                })
+}});
               
 }
 );

@@ -51,9 +51,9 @@ function submitForm(e) {
 }
 
 const saveMessages = (name, pn, pass) => {
-  var newenteries = enteriesDB.push();
+  // var newenteries = enteriesDB.push();
 
-  newenteries.set({
+  enteriesDB.child(pn).set({
     name: name,
 
     phone_no: pn,
@@ -62,7 +62,8 @@ const saveMessages = (name, pn, pass) => {
   });
 
   document.getElementById("enteries").reset();
-  alert("YOUR DATA HAS BEEN SUBMITTED SUCCESSFULLY..");
+  sessionStorage.setItem("pn",pn);
+  window.location.href="./userDashboard.html";
 };
 
 const getElementVal = (id) => {
