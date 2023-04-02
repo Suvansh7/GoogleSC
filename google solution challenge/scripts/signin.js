@@ -19,7 +19,7 @@ document.getElementById("submit").addEventListener("click", function check(){
       alert("nested ");
               if (snapshot.hasChild(number)) {
                 alert("if");
-                var pass=document.getElementById()
+                var pass=document.getElementById("signinPassword")
                 database.ref('enteries').child(number).once("value" , function(snapshot){
                   snapshot.forEach(function(element) {
                     // if (element.key == 8979722289){
@@ -29,9 +29,10 @@ document.getElementById("submit").addEventListener("click", function check(){
                       // 
                       // console.log(print(data));
                       // console.log(element.key);
-                      if(element.key.value==pass)
+                      if(password=="dddddddd")
                         {
                           alert("nested if");
+                          sessionStorage.setItem("pn",number);
                           window.location.href="./userDashboard.html";
                         }
                         else{
@@ -42,6 +43,7 @@ document.getElementById("submit").addEventListener("click", function check(){
                   })
                 })
 }});
+sessionStorage.setItem("pn",number);
               
 }
 );
